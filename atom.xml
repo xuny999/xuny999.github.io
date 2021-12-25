@@ -6,7 +6,7 @@
   <link href="http://xuny.github.io/atom.xml" rel="self"/>
   
   <link href="http://xuny.github.io/"/>
-  <updated>2021-12-23T10:34:55.767Z</updated>
+  <updated>2021-12-25T04:04:32.200Z</updated>
   <id>http://xuny.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git笔记</title>
+    <link href="http://xuny.github.io/posts/5bd9b965.html"/>
+    <id>http://xuny.github.io/posts/5bd9b965.html</id>
+    <published>2021-12-25T03:55:26.000Z</published>
+    <updated>2021-12-25T04:04:32.200Z</updated>
+    
+    <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#git-chang-yong-ming-ling">Git常用命令</a></li><li><a href="#git-fen-zhi-cao-zuo">Git分支操作</a></li><li><a href="#yuan-cheng-cang-ku-cao-zuo">远程仓库操作</a></li><li><a href="#ssh-mian-mi-deng-lu">SSH免密登录</a></li></ul><!-- tocstop --></div><h2><span id="git-chang-yong-ming-ling">Git常用命令</span><a href="#git-chang-yong-ming-ling" class="header-anchor">#</a></h2><ul><li>git config –global user.name 用户名<ul><li>设置用户签名</li></ul></li><li>git config –global user.email 邮箱<ul><li>设置用户签名</li></ul></li><li>git init<ul><li>初始化本地库</li></ul></li><li>git status<ul><li>查看本地库状态</li></ul></li><li>git add 文件名<ul><li>添加到暂存区</li></ul></li><li>git rm –cached 文件名<ul><li>删除暂存区文件</li></ul></li><li>git commit -m “日志信息” 文件名 <ul><li>提交到本地库</li></ul></li><li>git reflog<ul><li>查看版本信息</li></ul></li><li>git log<ul><li>查看版本详细信息</li></ul></li><li>git reset –hard 版本号<ul><li>版本穿梭</li></ul></li></ul><h2><span id="git-fen-zhi-cao-zuo">Git分支操作</span><a href="#git-fen-zhi-cao-zuo" class="header-anchor">#</a></h2><ul><li>git branch 分支名<ul><li>创建分支</li></ul></li><li>git branch -v<ul><li>查看分支</li></ul></li><li>git checkout 分支名<ul><li>切换分支</li></ul></li><li>git merge 分支名<ul><li>把指定的分支合并到当前分支上</li></ul></li></ul><h2><span id="yuan-cheng-cang-ku-cao-zuo">远程仓库操作</span><a href="#yuan-cheng-cang-ku-cao-zuo" class="header-anchor">#</a></h2><ul><li>git remote -v<ul><li>查看当前所有远程地址别名</li></ul></li><li>git remote add 别名 远程地址<ul><li>起别名</li></ul></li><li>git push 别名 分支<ul><li>推送本地分支上的内容到远程仓库</li></ul></li><li>git clone 远程地址<ul><li>将远程仓库的内容克隆到本地</li></ul></li><li>git pull 远程库地址别名 远程分支名<ul><li>将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并</li></ul></li></ul><h2><span id="ssh-mian-mi-deng-lu">SSH免密登录</span><a href="#ssh-mian-mi-deng-lu" class="header-anchor">#</a></h2><ul><li>ssh-keygen -t rsa -C <a href="mailto:&#x78;&#120;&#x78;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;">&#x78;&#120;&#x78;&#64;&#113;&#113;&#46;&#99;&#111;&#x6d;</a><ul><li>本地输入命令生成 ssh 秘钥</li></ul></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-t 加密算法</span></span><br><span class="line"><span class="comment">#-C 描述</span></span><br></pre></td></tr></table></figure><blockquote><p>输入上述命令会在用户的家目录的<code>.ssh</code>文件中生成两种文件，<code>id_rsa</code>是私钥，<code>id_rsa.pub</code>是公钥。</p></blockquote><ul><li>在 GitHub 的仓库—<code>settings</code> —<code>Deploy keys</code>中添加<code>id_rsa.pub</code>文件里的公钥。</li></ul>]]></content>
+    
+    
+    <summary type="html">Git 是一个免费的、开源的分布式版本控制系统，可以快速高效地处理从小型到大型的各种项目。它具有廉价的本地库，方便的暂存区域和多个工作流分支等特性。</summary>
+    
+    
+    
+    <category term="Git学习笔记" scheme="http://xuny.github.io/categories/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Linux" scheme="http://xuny.github.io/tags/Linux/"/>
+    
+    <category term="Git" scheme="http://xuny.github.io/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux课程大纲</title>
@@ -42,9 +67,9 @@
     <category term="Linux学习笔记" scheme="http://xuny.github.io/categories/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Linux" scheme="http://xuny.github.io/tags/Linux/"/>
-    
     <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Linux" scheme="http://xuny.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -65,9 +90,9 @@
     <category term="Java学习笔记" scheme="http://xuny.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Java" scheme="http://xuny.github.io/tags/Java/"/>
+    
+    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -88,9 +113,9 @@
     <category term="Java学习笔记" scheme="http://xuny.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Java" scheme="http://xuny.github.io/tags/Java/"/>
+    
+    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -111,9 +136,9 @@
     <category term="Java学习笔记" scheme="http://xuny.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Java" scheme="http://xuny.github.io/tags/Java/"/>
+    
+    <category term="笔记" scheme="http://xuny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
